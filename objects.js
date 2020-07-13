@@ -40,3 +40,8 @@ console.log(peter)
 console.log(peter.displayFullName())
 
 // const michael = Person('Michael', 'Smith') // throw error using 'use strict'
+
+const obj = new Object()
+obj.name = 'my new object'
+obj.type = 'object'
+console.log(obj)
