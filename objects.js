@@ -26,6 +26,10 @@ function Person(name, surname, address) {
   }
 }
 
+Person.prototype.greets = function() {
+  console.log(`Hello ${this.name} ${this.surname}!`)
+}
+
 const peter = new Person(
   'Peter',
   'Smith',
@@ -38,6 +42,7 @@ const peter = new Person(
 
 console.log(peter)
 console.log(peter.displayFullName())
+peter.greets()
 
 // const michael = Person('Michael', 'Smith') // throw error using 'use strict'
 
