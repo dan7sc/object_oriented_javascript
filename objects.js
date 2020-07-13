@@ -13,3 +13,30 @@ const person = {
 
 console.log(person)
 console.log(person.showFullName())
+
+function Person(name, surname, address) {
+  'use strict'
+
+  this.name = name || ''
+  this.surname = surname || ''
+  this.address = address || {}
+
+  this.displayFullName = function() {
+    return `${this.name} ${this.surname}`
+  }
+}
+
+const peter = new Person(
+  'Peter',
+  'Smith',
+  {
+    street: '4 Street',
+    city: 'London',
+    country: 'United Kingdom'
+  }
+)
+
+console.log(peter)
+console.log(peter.displayFullName())
+
+// const michael = Person('Michael', 'Smith') // throw error using 'use strict'
