@@ -50,3 +50,19 @@ const obj = new Object()
 obj.name = 'my new object'
 obj.type = 'object'
 console.log(obj)
+
+
+class PersonClass {
+  constructor(name, surname) {
+    this.name = name
+    this.surname = surname
+  }
+
+  greets() {
+    console.log(`Hello ${this.name} ${this.surname}!`)
+  }
+}
+
+const classPerson = new PersonClass('Blue', 'Smith')
+console.log(classPerson)
+classPerson.greets()
