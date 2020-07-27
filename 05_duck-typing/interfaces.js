@@ -71,3 +71,5 @@ const softHouse = new SofwareHouse()
 
 softHouse.hire(john)
 console.log(softHouse.employees)
+
+module.exports = Interface
